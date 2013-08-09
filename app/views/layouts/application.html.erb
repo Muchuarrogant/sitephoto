@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sitephoto</title>
+  <title> Amaizing trip </title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-</head>
+</head> 
+
 <body>
+	<%= link_to "Home", root_path %> 
+<%= link_to "About", about_path %>
+
 
 <%= yield %>
+
+<div class="footer">
+	<small> 
+		Designed by <a href="https://www.facebook.com/victor.matei.7"> Victor Matei </a> 
+		<small>
+	</div>
 
 </body>
 </html>
